@@ -1,0 +1,177 @@
+/* --- Global Styles --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  height: 100vh; /* Imposta l'altezza del viewport */
+  display: flex; /* Utilizza Flexbox per il corpo */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra orizzontalmente */
+}
+
+/* --- App Container --- */
+.app-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* --- Title --- */
+.app-title {
+  text-align: center;
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+/* --- Form Sections --- */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section {
+  margin-bottom: 15px;
+}
+
+.input-select,
+.input-number {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group {
+  margin-bottom: 10px;
+}
+
+/* --- Button Styles --- */
+.submit-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  background-color: #1a73e8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #135cbf;
+}
+
+/* --- Result Message --- */
+.result-message {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.result-message.verde {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.result-message.rosso {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+/* Layout Responsive */
+@media screen and (max-width: 768px) {
+  .app-container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .input-select,
+  .input-number {
+    font-size: 16px; /* Previene lo zoom automatico su iOS */
+    padding: 12px;
+  }
+
+  .checkbox-label {
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .result-message {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    padding: 15px 10px;
+  }
+}
+
+/* Aggiustamenti per schermi molto piccoli */
+@media screen and (max-width: 480px) {
+  .app-container {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .app-title {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .checkbox-label {
+    font-size: 0.85rem;
+  }
+}
+
+/* Orientamento landscape per telefoni */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  body {
+    height: auto;
+  }
+
+  .app-container {
+    margin: 10px auto;
+  }
+
+  .form-container {
+    gap: 10px;
+  }
+}

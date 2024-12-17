@@ -1,0 +1,2 @@
+creazione di calcolatrice grafica, che semplicimente visualizza le funzioni che l'utente inserisce,
+tipo il simil geogebra di zichi in c# ma su web

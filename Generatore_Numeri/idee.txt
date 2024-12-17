@@ -1,0 +1,2 @@
+generatore numeri con la possibilità di rimuovo alcuni numeri dal docente, visto che magari alcuni sono gia stati estratti, maggior randomicità
+dell'uscita del numero. estrazione di coppie/gruppi per turni di interrogazioni o lavori a gruppo-coppie. 
