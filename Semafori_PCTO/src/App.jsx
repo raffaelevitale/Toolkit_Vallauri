@@ -130,6 +130,7 @@ function App() {
                 type="number"
                 className="input-number"
                 min="0"
+                max = "11"
                 value={materieNonIndirizzoInsufficienti}
                 onChange={(e) => {
                   const valore = Math.max(0, Number(e.target.value));
